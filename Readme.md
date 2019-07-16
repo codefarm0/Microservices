@@ -1,21 +1,19 @@
-> A workshop of software architects held near Venice in May 2011 used the term "microservice" to describe what the participants saw as a common 
-architectural style that many of them had been recently exploring
-> A microservice is not a layer within a monolithic application (example, the web controller, or the backend-for-frontend[9]). 
-Rather it is a self-contained piece of business functionality with clear interfaces, and may, through its own internal components, 
+# Few Details about microservices - 
+
+* A workshop of software architects held near Venice in May 2011 used the term "microservice" to describe what the participants saw as a common architectural style that many of them had been recently exploring
+* A microservice is not a layer within a monolithic application (example, the web controller, or the backend-for-frontend[9]). 
+* Rather it is a self-contained piece of business functionality with clear interfaces, and may, through its own internal components, 
 implement a layered architecture.
 * Microservices is a specialization of an implementation approach for service-oriented architectures (SOA) used to build flexible, 
 independently deployable software systems.
-* The microservices approach is a first realisation of SOA that followed the introduction of DevOps and is becoming more popular for building 
-continuously deployed systems.
-From a strategy perspective, microservices architecture essentially follows the Unix philosophy of "Do one thing and do it well".
-Martin Fowler describes a microservices-based architecture as having the following properties:[5]
-
+* The microservices approach is a first realisation of SOA that followed the introduction of DevOps and is becoming more popular for building continuously deployed systems.
+* From a strategy perspective, microservices architecture essentially follows the Unix philosophy of "Do one thing and do it well".
+Martin Fowler describes a microservices-based architecture as having the following properties
 * Naturally enforces a modular structure.
-* Lends itself to a continuous delivery software development process. A change to a small part of the application only requires rebuilding and 
-   redeploying only one or a small number of services.
+* Lends itself to a continuous delivery software development process. A change to a small part of the application only requires rebuilding and redeploying only one or a small number of services.
 * Adheres to principles such as fine-grained interfaces (to independently deployable services), business-driven development (e.g. domain-driven design).
 
-It is quite common for such an architectural style to be adopted for 
+## It is quite common for such an architectural style to be adopted for 
 * cloud-native applications,
 * and applications using lightweight container deployment
 * Robert C. Martin coined the term single responsibility principle which states “gather together those things that change for the same reason, 
