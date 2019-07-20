@@ -2,6 +2,8 @@ package com.gl.userManagementApp.controller;
 
 import com.gl.userManagementApp.dto.User;
 import com.gl.userManagementApp.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,11 +15,14 @@ import java.util.List;
 @RestController
 public class UserController {
 
+    Logger log = LoggerFactory.getLogger("UserManagmentApp");
+
     @Autowired
     private UserService userService;
 
     @GetMapping("/users")
     public List<User> getAllUsers(){
+        log.info("getting users..");
         return userService.getAllUsers();
     }
 
