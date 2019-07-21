@@ -3,7 +3,7 @@
 - [Design of the project](#design-of-the-project)
 - [Youtube video to explain the code base](#youtube-video-to-explain-the-code-base)
 - [How to run the project](#how-to-run-the-project)
-- [End point urls -](#end-point-urls)
+- [End point urls](#end-point-urls)
 
 
 ## Design of the project
@@ -24,7 +24,7 @@ The design has been expalined in following ppt -
             gradlew clean build 
             
        this will create the jar file inside build/libs
-    * go to /build/libs and execute > java -jar <name of the jar>.jar
+    * go to /build/libs and execute > java -jar <name of the jar> <name-of-application>.jar
   * Sencond way - Directly running the main method
     * Open the project in IntelliJ Idea or eclipse
     * And run the main method inside UserManagementAppApplication.java
