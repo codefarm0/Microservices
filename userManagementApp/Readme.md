@@ -5,7 +5,7 @@ The design has been expalined in following ppt -
 
 ## Youtube video to explain the code base
 
-* <TBD> will post soon
+* https://www.youtube.com/playlist?list=PLq3uEqRnr_2Hb9M-hz6GPVg_x9TUQ9PJA
 
 ## How to run the project
 * Clone it to local
