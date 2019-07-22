@@ -39,3 +39,5 @@ and separate those things that change for different reasons.”
 * Technologies
 * Service Mesh
 
+## Note
+* Open individual folder inside to know more.
