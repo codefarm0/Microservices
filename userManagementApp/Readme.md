@@ -15,7 +15,7 @@ The design has been expalined in following ppt -
 * https://www.youtube.com/playlist?list=PLq3uEqRnr_2Hb9M-hz6GPVg_x9TUQ9PJA
 
 ## How to run the project
-* Clone it to local - https://github.com/greenlearner01/Microservices.git and
+* Clone it to local - git clone https://github.com/greenlearner01/Microservices.git and
 * Navigate to userManagementApp folder
 * Now there are two ways to run the project
   * First- running jar file
