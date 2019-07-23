@@ -7,7 +7,7 @@
 
 
 ## Design of the project
-The design has been expalined in following ppt - 
+The design has been explained in following ppt -
 * https://github.com/greenlearner01/Microservices/blob/master/ppt/Rest_application_with_spring_boot.pptx
 
 ## Youtube video to explain the code base
