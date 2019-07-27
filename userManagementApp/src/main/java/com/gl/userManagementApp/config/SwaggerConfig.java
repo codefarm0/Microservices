@@ -4,9 +4,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+import java.util.ArrayList;
 
 @Configuration
 @EnableSwagger2
@@ -21,15 +24,15 @@ public class SwaggerConfig {
     }
 
     private ApiInfo getApiInfo() {
-        ApiInfo apiInfo = new ApiInfo(
-                "User Management REST API",
+        return new ApiInfo("User Management REST API",
                 "Documentation for userManagementApp for 3rd party",
                 "1.0",
                 "Terms of service for using userManagementApp",
-                "Green Learner",
+                new Contact("Green Learner","https://www.youtube.com/channel/UCaH2MTg94hrJZTolW01a3ZA","greenlearner01@gmail.com"),
                 "MIT Licence",
-                "https://opensource.org/licenses/MIT");
-        return apiInfo;
+                "https://opensource.org/licenses/MIT",
+                new ArrayList<>()
+        );
     }
 }
 
