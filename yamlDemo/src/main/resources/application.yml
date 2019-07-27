@@ -1,0 +1,21 @@
+config:
+    port: ${random.int}
+    thirdParty:
+        host: 109.43.32.43
+        name: user2
+        port: 90
+    userName: dummy
+list: '{"a", "b", "1"}'
+server:
+    port: 8081
+spring:
+    application:
+        name: properties demo
+user:
+    fb:
+        password: sheldon12
+    gmail:
+        name: raj
+        password: raj123
+values:
+    map: '{key1: ''1'', key2: ''2'', key3: ''3''}'
