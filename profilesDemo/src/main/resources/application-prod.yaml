@@ -1,0 +1,11 @@
+app:
+  server:
+    name: glashfish
+    detail: this is glasfish for production
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@hostname:80:rocky
+    username: oracle-prod
+    password: heybabe
+

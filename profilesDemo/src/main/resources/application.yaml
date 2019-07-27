@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+app:
+  server:
+    name: geenral
+    detail: this is general server
+
+spring:
+  profiles:
+    active:
+      - test
+  datasource:
+    url: jdbc:hsqldb:hsql://localhost/geenral
+    username: geenral-user
+    password: 12345
+  application:
+    name: This is the demo project for spring profiles
