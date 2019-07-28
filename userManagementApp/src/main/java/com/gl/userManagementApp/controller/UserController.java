@@ -15,14 +15,14 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    Logger log = LoggerFactory.getLogger("UserManagmentApp");
+    Logger logger = LoggerFactory.getLogger("UserManagementApp");
 
     @Autowired
     private UserService userService;
 
     @GetMapping("/users")
     public List<User> getAllUsers(){
-        log.info("getting users..");
+        logger.info("getting users..");
         return userService.getAllUsers();
     }
 
@@ -51,5 +51,15 @@ public class UserController {
     @DeleteMapping("/user/{id}")
     public User deleteUser(@PathVariable String id){
         return userService.deleteUser(id);
+    }
+
+    @GetMapping("/logs")
+    public String logs(){
+        logger.trace("A TRACE Message");
+        logger.debug("A DEBUG Message");
+        logger.info("An INFO Message");
+        logger.warn("A WARN Message");
+        logger.error("An ERROR Message");
+        return "hey buddy see the console for different level of logs";
     }
 }
