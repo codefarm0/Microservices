@@ -1,6 +1,8 @@
 package com.gl.springDataDemo.service;
 
 import com.gl.springDataDemo.dto.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Slice;
 
 import java.util.List;
 
@@ -11,9 +13,12 @@ public interface UserService {
 
     void addUser(User user);
 
-    String updateUser(Long id, String address);
-
     void deleteUserById(Long id);
 
-    User findUserByName(String firstName);
+    List<User> getAllUserByFirstName(String firstName);
+
+    List<User> getUsersByGender(String gender1);
+
+    void updateAddress(Long id, String newAdress);
+
 }

@@ -37,13 +37,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String updateUser(Long id, String address) {
-        userRepository.updateAddress(id, address);
-        logger.info("New address for user_id " + id +" is - " + address);
-        return "New address for user_id " + id +" is - " + address;
-    }
-
-    @Override
     public void deleteUserById(Long id) {
         userRepository.deleteById(new Long(id));
         logger.info("User with {} deleted from the DB", id);
@@ -51,7 +44,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findUserByName(String firstName) {
-        return userRepository.findByFirstName(firstName);
+    public List<User> getAllUserByFirstName(String firstName) {
+        return userRepository.getAllUserByFirstName(firstName);
+    }
+
+    @Override
+    public List<User> getUsersByGender(String gender1) {
+        return userRepository.getUsersByGender(gender1);
+    }
+
+    @Override
+    public void updateAddress(Long id, String newAdress) {
+        userRepository.updateAddress(id, newAdress);
     }
 }

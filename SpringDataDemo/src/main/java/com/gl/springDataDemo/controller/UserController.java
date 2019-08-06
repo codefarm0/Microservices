@@ -43,21 +43,26 @@ public class UserController {
 
     }
 
-    @PutMapping("/user/{id}")
-    public String updateUser(@PathVariable Long id, @RequestParam String address){
-        return userService.updateUser(id, address);
-    }
-
     @DeleteMapping("/user/{id}")
     public String deleteUser(@PathVariable String id){
         userService.deleteUserById(new Long(id));
         return "User with Id " + id + " deleted";
     }
 
-    @GetMapping("/userByName/{firstName}")
-    public User findUserByName(@PathVariable String firstName){
-        return userService.findUserByName(firstName);
+    @GetMapping("/getAllUserByFirstName/{firstName}")
+    public List<User>getAllUsersByFirstName(@PathVariable String firstName){
+        return userService.getAllUserByFirstName(firstName);
     }
 
+    @GetMapping("/getAllUserByGender/{gender}")
+    public List<User>getAllUsersByGender(@PathVariable String gender){
+        return userService.getUsersByGender(gender);
+    }
+
+    @PutMapping("/updateAddress/{id}/{newAddress}")
+    public String updateAddress(@PathVariable String id, @PathVariable String newAddress){
+        userService.updateAddress(Long.parseLong(id), newAddress);
+        return "address updated!!";
+    }
 
 }
