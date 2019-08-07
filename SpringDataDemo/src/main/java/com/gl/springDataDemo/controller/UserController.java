@@ -5,6 +5,7 @@ import com.gl.springDataDemo.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Slice;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -63,6 +64,16 @@ public class UserController {
     public String updateAddress(@PathVariable String id, @PathVariable String newAddress){
         userService.updateAddress(Long.parseLong(id), newAddress);
         return "address updated!!";
+    }
+
+    @GetMapping("/getAllSortedUser/{sortedParam}")
+    public List<User>getAllSortedusers(@PathVariable String sortedParam){
+        return userService.findSortedUsers(sortedParam);
+    }
+
+    @GetMapping("/getAllUserByGender/{gender}/{sortedParam}")
+    public List<User>getAllUsersByGenderAndSort(@PathVariable String gender, @PathVariable String sortedParam){
+        return userService.getUsersByGenderAndSort(gender, sortedParam);
     }
 
 }

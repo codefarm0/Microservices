@@ -5,6 +5,9 @@ import com.gl.springDataDemo.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Slice;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -57,4 +60,15 @@ public class UserServiceImpl implements UserService {
     public void updateAddress(Long id, String newAdress) {
         userRepository.updateAddress(id, newAdress);
     }
+
+    @Override
+    public List<User> findSortedUsers(String paramForSorting) {
+        return (List<User>) userRepository.findAll(Sort.by(paramForSorting));
+    }
+
+    @Override
+    public List<User> getUsersByGenderAndSort(String gender1, String sortingParam) {
+        return userRepository.getUsersByGenderAndSort(gender1, Sort.by(sortingParam));
+    }
+
 }
