@@ -4,10 +4,10 @@
 - [Features](#features)
 - [Note](#note)
 - [Topic wise details](#topic-wise-details)
-  - [Spring data JPA](#spring-data-jpa)
-  - [Communication among microservices in spring boot](#communication-among-microservices-in-spring-boot)
-    - [RestTemplate](#resttemplate)
-    - [Feign Client](#feign-client)
+- [Spring data JPA](#spring-data-jpa)
+- [Communication among microservices in spring boot](#communication-among-microservices-in-spring-boot)
+  - [RestTemplate](#resttemplate)
+  - [Feign Client](#feign-client)
 
 
 ## Few Details about microservices
@@ -49,9 +49,7 @@ and separate those things that change for different reasons.”
 ## Note
 * Open individual folder inside to know more.
 
-## Topic wise details
-
-### Spring data JPA
+## Spring data JPA
 * What is spring Data JPA, CRUDRepository - https://youtu.be/14YYI5DwObg
 
 * Writting custom query using @query annotation - https://youtu.be/oVKpNP3FcPc
@@ -60,16 +58,16 @@ and separate those things that change for different reasons.”
 
 * What is Paging, slicing and how to execute native sql queries - TBD
 
-### Communication among microservices in spring boot
+## Communication among microservices in spring boot
 
 There are below two ways with which REST services can communicate among themselves - 
 * RestTemplate &
 * FeignClient
 
-#### RestTemplate
+### RestTemplate
 * RestTemplate part-1 - <TBD>
 * RestTemplate part-2 - <TBD>
 	
-#### Feign Client
+### Feign Client
 * Feign Client part-1 - <TBD>
 * Feign Client part-2 - <TBD>
