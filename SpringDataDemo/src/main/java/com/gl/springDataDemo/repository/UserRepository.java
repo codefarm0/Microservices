@@ -4,6 +4,7 @@ import com.gl.springDataDemo.dto.User;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -17,7 +18,7 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
-public interface UserRepository extends PagingAndSortingRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
     //indexed query
     @Query("select u from User u where u.firstName=?1")
@@ -25,7 +26,7 @@ public interface UserRepository extends PagingAndSortingRepository<User, Long> {
 
     //named query
 
-    @Query("select u from User u where u.gender=:gender")
+    @Query(value = "select u from User u where u.gender=:gender"/*, nativeQuery = true*/)
     List<User> getUsersByGender(@Param("gender")String gender1);
 
 

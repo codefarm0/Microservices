@@ -1,6 +1,7 @@
 package com.gl.springDataDemo.service;
 
 import com.gl.springDataDemo.dto.User;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.query.Param;
@@ -25,4 +26,6 @@ public interface UserService {
     List<User> findSortedUsers(String paramForSorting);
 
     List<User> getUsersByGenderAndSort(String gender1, String sortingParam);
+
+    Page<User>  getAllUsersByPages(int pageNumber, int numberOfElementsPerPage);
 }
