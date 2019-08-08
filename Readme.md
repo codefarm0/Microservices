@@ -56,7 +56,7 @@ and separate those things that change for different reasons.”
 
 * What is sorting of data and how to sort in JPA - https://youtu.be/UkuzIjBkbWI
 
-* What is Paging, slicing and how to execute native sql queries - TBD
+* What is Paging, slicing and how to execute native sql queries - https://youtu.be/UkuzIjBkbWI
 
 ## Communication among microservices in spring boot
 
