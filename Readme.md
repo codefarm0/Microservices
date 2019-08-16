@@ -3,7 +3,6 @@
 - [Few Details about microservices](#few-details-about-microservices)
 - [Features](#features)
 - [Note](#note)
-- [Topic wise details](#topic-wise-details)
 - [Spring data JPA](#spring-data-jpa)
 - [Communication among microservices in spring boot](#communication-among-microservices-in-spring-boot)
   - [RestTemplate](#resttemplate)
@@ -65,8 +64,9 @@ There are below two ways with which REST services can communicate among themselv
 * FeignClient
 
 ### RestTemplate
-* RestTemplate part-1 - <TBD>
-* RestTemplate part-2 - <TBD>
+* RestTemplate part-1 -  https://youtu.be/5WXk88r9T90
+* RestTemplate part-2 -  https://youtu.be/RHplGVRKwlc
+* RestTemplate part -3 - <TBD>
 	
 ### Feign Client
 * Feign Client part-1 - <TBD>
