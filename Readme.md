@@ -71,3 +71,7 @@ There are below two ways with which REST services can communicate among themselv
 
 ## Circuit Breaker
 * One place for all videos and example code - https://github.com/greenlearner01/CircuitBreaker
+
+## Spring cloud
+
+What is spring cloud all about - https://youtu.be/8WGuLpDYx5E
