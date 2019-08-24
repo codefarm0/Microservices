@@ -64,10 +64,10 @@ There are below two ways with which REST services can communicate among themselv
 * FeignClient
 
 ### RestTemplate
-* RestTemplate part-1 -  https://youtu.be/5WXk88r9T90
-* RestTemplate part-2 -  https://youtu.be/RHplGVRKwlc
-* RestTemplate part -3 - <TBD>
+* One place for all videos and example codes - https://github.com/greenlearner01/RestTemplate
 	
 ### Feign Client
-* Feign Client part-1 - <TBD>
-* Feign Client part-2 - <TBD>
+* One place for all videos and example codes - https://github.com/greenlearner01/SpringOpenFeignClient
+
+## Circuit Breaker
+* One place for all videos and example code - https://github.com/greenlearner01/CircuitBreaker
