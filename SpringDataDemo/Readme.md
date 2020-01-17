@@ -1,3 +1,7 @@
+#Spring boot data JPA
+
+* Playlist - https://www.youtube.com/playlist?list=PLq3uEqRnr_2HoBCVtDb9-FYthkV5DHj_q
+
 ## Below are the videos to explain the spring data demo concept and code base in detail - 
 
 * Part-1 Spring data demo basics - 
